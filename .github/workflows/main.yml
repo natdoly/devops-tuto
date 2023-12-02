@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Tag Image
-        run: docker tag flashserver nathandoly/ndflaskserver
+        run: docker tag flaskserver nathandoly/ndflaskserver
       - name: Push Image to Docker Hub
         run: docker push nathandoly/ndflaskserver
     
