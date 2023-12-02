@@ -21,7 +21,7 @@ jobs:
       run: docker images
 
     - name: Tag Image
-      run: docker tag flaskserver ${{ secrets.DOCKER_HUB_USERNAME }}/ndflaskserver
+      run: docker tag flaskserver ${{ secrets.DOCKER_HUB_SIMPLE_USERNAME }}/ndflaskserver
 
     - name: Push Image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/ndflaskserver
+      run: docker push ${{ secrets.DOCKER_HUB_SIMPLE_USERNAME }}/ndflaskserver
