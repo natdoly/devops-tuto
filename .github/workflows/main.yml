@@ -29,6 +29,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: check images
+        run: docker images
       - name: Tag Image
         run: docker tag flaskserver nathandoly/ndflaskserver
       - name: Push Image to Docker Hub
