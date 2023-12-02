@@ -9,3 +9,10 @@ jobs:
     steps:
     - name: Check Docker Version
       run: docker -v
+    
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: build image
+      run: docker build -t "flaskserver" .
