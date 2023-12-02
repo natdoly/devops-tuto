@@ -30,8 +30,8 @@ jobs:
 
     steps:
       - name: Tag Image
-        run: docker tag flask-app ${{ secrets.DOCKER_HUB_USERNAME }}/flask-app:latest
+        run: docker tag flask-app ${{ secrets.DOCKER_HUB_USERNAME }}/ndflaskapp
       - name: Push Image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/flask-app:latest
+        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/ndflaskapp
     
     
